@@ -136,17 +136,17 @@
 
 
 
-<meta name="description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub ##配置环境1、注册一个GitHub账号2、安装node.js、npm3、安装Git客户端（这是Windows） ##安装hexo1、Node.js安装完成后,在电脑任意位置,右">
+<meta name="description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub 配置环境1、注册一个GitHub账号2、安装node.js、npm或者yarn3、安装Git客户端（这是Windows） 安装hexo1、Node.js安装完成后,在电脑任意位置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github + hexo 搭建博客">
 <meta property="og:url" content="http://github.com/gracebian/gracebian.github.io/2017/08/05/github-hexo-搭建博客/index.html">
 <meta property="og:site_name" content="grace_bian blog">
-<meta property="og:description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub ##配置环境1、注册一个GitHub账号2、安装node.js、npm3、安装Git客户端（这是Windows） ##安装hexo1、Node.js安装完成后,在电脑任意位置,右">
+<meta property="og:description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub 配置环境1、注册一个GitHub账号2、安装node.js、npm或者yarn3、安装Git客户端（这是Windows） 安装hexo1、Node.js安装完成后,在电脑任意位置">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-18T15:40:31.526Z">
+<meta property="og:updated_time" content="2017-08-18T18:58:43.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github + hexo 搭建博客">
-<meta name="twitter:description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub ##配置环境1、注册一个GitHub账号2、安装node.js、npm3、安装Git客户端（这是Windows） ##安装hexo1、Node.js安装完成后,在电脑任意位置,右">
+<meta name="twitter:description" content="因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。大致分为以下几个步骤：1、配置环境2、安装hexo3、创建Github4、配置SSH Key5、配置GitHub 配置环境1、注册一个GitHub账号2、安装node.js、npm或者yarn3、安装Git客户端（这是Windows） 安装hexo1、Node.js安装完成后,在电脑任意位置">
 
 
 
@@ -412,14 +412,21 @@
 
       
         <p>因为自己在搭建博客时有遇到难题，所以在这还是记录下搭建博客的过程，与此同时自己也参照网上的教程来再次学习下。<br>大致分为以下几个步骤：<br>1、配置环境<br>2、安装hexo<br>3、创建Github<br>4、配置SSH Key<br>5、配置GitHub</p>
-<p>##配置环境<br>1、注册一个GitHub账号<br>2、安装node.js、npm<br>3、安装Git客户端（这是Windows）</p>
-<p>##安装hexo<br>1、Node.js安装完成后,在电脑任意位置,右键,选择 GitBash ,执行npm命令<br>sudo npm install -g hexo<br>2、在本地创建一个文件夹，存放hexo的配置文件，我文件夹的名字是直接用的GitHub的仓库名gracebian.github.io，这样以便记忆。<br>3、在上面创建的文件夹，右键选择Git Bush Here,初始化命令：hexo init<br>4、生成静态页面：hexo generate（简写hexo g）<br>5、启动本地服务器，进行预览调试：hexo sever （简写hexo s）<br>6、浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
-<p>##创建GitHub<br>1、创建一个repository(仓库)<br>2、在Repository name下填写yourname.github.io<br>注意：比如我的github名称是gracebian ,这里你就填 gracebian.github.io</p>
-<p>##配置SSH Key</p>
-<p>###一、设置Git的user name和email：<br>$ git config –global user.name “gracebian”<br>$ git config –global user.email “grace_bian1@163.com”</p>
-<p>###二、生成SSH Key<br>1、查看是否已经有SSH Key:cd ~/.ssh<br>2、如果没有，就执行下面代码生成密钥：<br>$ ssh-keygen -t rsa -C “grace_bian1@163.com”<br>按3个回车，密码为空即可，生成的SSH key文件保存在中～/.ssh/id_rsa.pub<br>然后用文本编辑工具打开该文件，接着拷贝.ssh/id_rsa.pub文件内的所以内容，将它粘帖到github帐号管理中的添加SSH key界面中<br>3、打开github帐号管理中的添加SSH key界面的步骤如下：<br>a. 登录github<br>b. 点击右上方的Accounting settings图标<br>c. 选择 SSH key<br>d. 点击 Add SSH key<br>在出现的界面中填写SSH key的名称，填一个你自己喜欢的名称即可，然后将上面拷贝的~/.ssh/id_rsa.pub文件内容粘帖到key一栏，在点击“add key”按钮就可以了。<br>添加过程github会提示你输入一次你的github密码。</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>1、注册一个GitHub账号<br>2、安装node.js、npm或者yarn<br>3、安装Git客户端（这是Windows）</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>1、Node.js安装完成后,在电脑任意位置,右键,选择 GitBash ,执行以下命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g hexo</div><div class="line">or</div><div class="line">yarn global add hexo</div></pre></td></tr></table></figure></p>
+<p>2、在本地创建一个文件夹，存放hexo的配置文件，我文件夹的名字是直接用的GitHub的仓库名gracebian.github.io，这样以便记忆。<br>3、在上面创建的文件夹，右键选择Git Bush Here,初始化命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>4、生成静态页面：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate(简写hexo g)</div></pre></td></tr></table></figure></p>
+<p>5、启动本地服务器，进行预览调试：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo sever (简写hexo s)</div></pre></td></tr></table></figure></p>
+<p>6、浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<h2 id="创建GitHub"><a href="#创建GitHub" class="headerlink" title="创建GitHub"></a>创建GitHub</h2><p>1、创建一个repository(仓库)<br>2、在Repository name下填写yourname.github.io<br>注意：比如我的github名称是gracebian ,这里你就填 gracebian.github.io</p>
+<h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><h3 id="一、设置Git的user-name和email："><a href="#一、设置Git的user-name和email：" class="headerlink" title="一、设置Git的user name和email："></a>一、设置Git的user name和email：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"gracebian"</span></div><div class="line">$ git config --global user.email <span class="string">"grace_bian1@163.com"</span></div></pre></td></tr></table></figure>
+<h3 id="二、生成SSH-Key"><a href="#二、生成SSH-Key" class="headerlink" title="二、生成SSH Key"></a>二、生成SSH Key</h3><p>1、查看是否已经有SSH Key:cd ~/.ssh<br>2、如果没有，就执行下面代码生成密钥：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C “grace_bian1@163.com”</div></pre></td></tr></table></figure></p>
+<p>按3个回车，密码为空即可，生成的SSH key文件保存在中～/.ssh/id_rsa.pub<br>然后用文本编辑工具打开该文件，接着拷贝.ssh/id_rsa.pub文件内的所以内容，将它粘帖到github帐号管理中的添加SSH key界面中<br>3、打开github帐号管理中的添加SSH key界面的步骤如下：<br>a. 登录github<br>b. 点击右上方的Accounting settings图标<br>c. 选择 SSH key<br>d. 点击 Add SSH key<br>在出现的界面中填写SSH key的名称，填一个你自己喜欢的名称即可，然后将上面拷贝的~/.ssh/id_rsa.pub文件内容粘帖到key一栏，在点击“add key”按钮就可以了。<br>添加过程github会提示你输入一次你的github密码。</p>
 <p>添加完成后再次执行git clone就可以成功克隆github上的代码库了。</p>
-<p>##配置Github<br>1、配置_config.yml文件，来建立关联，<br>deploy:<br>     type: git<br>     repo: <a href="https://github.com/leopardpan/leopardpan.github.io.git">https://github.com/leopardpan/leopardpan.github.io.git</a><br>     branch: master<br>2、然后执行命令：npm install hexo-deployer-git –save<br>3、hexo deploy（简写hexo d）<br>4、然后再浏览器中输入github的账户<a href="http://gracebian.github.io" target="_blank" rel="external">http://gracebian.github.io</a><br>5、每次部署的步骤，可按以下三步来进行。<br>hexo clean<br>hexo generate<br>hexo deploy</p>
+<h2 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h2><p>1、配置_config.yml文件，来建立关联，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">     <span class="built_in">type</span>: git</div><div class="line">     repo: https://github.com/leopardpan/leopardpan.github.io.git</div><div class="line">     branch: master</div></pre></td></tr></table></figure></p>
+<p>2、然后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">or</div><div class="line">yarn add hexo-deployer-git</div></pre></td></tr></table></figure></p>
+<p>3、部署<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy（简写hexo d）</div></pre></td></tr></table></figure></p>
+<p>4、然后再浏览器中输入github的账户<a href="http://gracebian.github.io" target="_blank" rel="external">http://gracebian.github.io</a><br>5、每次部署的步骤，可按以下三步来进行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -514,8 +521,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -801,6 +817,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建GitHub"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置SSH-Key"><span class="nav-number">4.</span> <span class="nav-text">配置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、设置Git的user-name和email："><span class="nav-number">4.1.</span> <span class="nav-text">一、设置Git的user name和email：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、生成SSH-Key"><span class="nav-number">4.2.</span> <span class="nav-text">二、生成SSH Key</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置Github"><span class="nav-number">5.</span> <span class="nav-text">配置Github</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -816,7 +848,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2015 - 
+  &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-diamond"></i>
