@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/gracebian/gracebian.github.io/"/>
-  <updated>2017-08-23T02:18:59.061Z</updated>
+  <updated>2017-08-23T03:40:48.983Z</updated>
   <id>http://github.com/gracebian/gracebian.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://github.com/gracebian/gracebian.github.io/2017/08/22/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6/"/>
     <id>http://github.com/gracebian/gracebian.github.io/2017/08/22/vue-cli脚手架/</id>
     <published>2017-08-22T12:47:10.000Z</published>
-    <updated>2017-08-23T02:18:59.061Z</updated>
+    <updated>2017-08-23T03:40:48.983Z</updated>
     
     <content type="html"><![CDATA[<h1 id="vue-cli"><a href="#vue-cli" class="headerlink" title="vue-cli"></a>vue-cli</h1><p>vue提供的一个vue项目的创建和初始化工具 - 通常我们称他为：脚手架</p>
 <h1 id="安装步骤："><a href="#安装步骤：" class="headerlink" title="安装步骤："></a>安装步骤：</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="https://github.com/vuejs/vue-cli">https://github.com/vuejs/vue-cli</a><br>(全局安装vue-cli）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g vue-cli</div></pre></td></tr></table></figure></p>
@@ -49,7 +49,7 @@
 <li>node_modules文件夹：是npm install安装的依赖代码库</li>
 <li>src文件夹：存放源码</li>
 <li>static：存放第三方静态资源的，static里面的.gitkeep，如果为空，也可以提交到gitHub上面，正常情况下，是不可以提交的。</li>
-<li>.babelrc:把es6文件编译成es5</li>
+<li>babelrc:把es6文件编译成es5</li>
 </ul>
 ]]></content>
     
